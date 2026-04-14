@@ -3,7 +3,7 @@ import pyttsx3
 def speak(text):
     print("Speaking:", text)
 
-    engine = pyttsx3.init()   # ⭐ create fresh engine every time
+    engine = pyttsx3.init()   # create fresh engine every time
 
     engine.setProperty('rate', 170)
 
@@ -13,4 +13,4 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-    engine.stop()   # ⭐ VERY IMPORTANT
+    engine.stop()   # VERY IMPORTANT
